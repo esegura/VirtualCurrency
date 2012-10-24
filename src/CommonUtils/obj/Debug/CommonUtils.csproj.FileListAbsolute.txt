@@ -1,0 +1,7 @@
+C:\VirtualCurrency\src\CommonUtils\bin\Debug\CommonUtils.dll
+C:\VirtualCurrency\src\CommonUtils\bin\Debug\CommonUtils.pdb
+C:\VirtualCurrency\src\CommonUtils\bin\Debug\log4net.dll
+C:\VirtualCurrency\src\CommonUtils\bin\Debug\log4net.xml
+C:\VirtualCurrency\src\CommonUtils\obj\Debug\ResolveAssemblyReference.cache
+C:\VirtualCurrency\src\CommonUtils\obj\Debug\CommonUtils.dll
+C:\VirtualCurrency\src\CommonUtils\obj\Debug\CommonUtils.pdb

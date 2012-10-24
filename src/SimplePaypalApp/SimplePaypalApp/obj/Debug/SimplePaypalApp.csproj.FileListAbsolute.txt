@@ -1,0 +1,6 @@
+C:\VirtualCurrency\src\SimplePaypalApp\SimplePaypalApp\bin\SimplePaypalApp.dll
+C:\VirtualCurrency\src\SimplePaypalApp\SimplePaypalApp\bin\SimplePaypalApp.pdb
+C:\VirtualCurrency\src\SimplePaypalApp\SimplePaypalApp\bin\paypal_base.dll
+C:\VirtualCurrency\src\SimplePaypalApp\SimplePaypalApp\obj\Debug\ResolveAssemblyReference.cache
+C:\VirtualCurrency\src\SimplePaypalApp\SimplePaypalApp\obj\Debug\SimplePaypalApp.dll
+C:\VirtualCurrency\src\SimplePaypalApp\SimplePaypalApp\obj\Debug\SimplePaypalApp.pdb

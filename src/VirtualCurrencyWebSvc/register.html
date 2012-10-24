@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Login</title>
+<style>	
+body {
+	width:1024px;
+	height:768px;
+	margin:auto;
+}
+#loader {
+	margin:auto;
+}
+input {
+	margin:auto;
+}
+.form {
+	width:350px;
+	height:155px;
+	background-color:#CCCCCC;
+	padding:5px;
+}
+.border{
+	width:350px;
+	margin:150px auto auto auto;
+	padding:5px;
+}
+#registrationEntry, #usernameEntry {
+	width:250px;
+}
+#buttonSubmit, #usernamebuttonSubmit {
+	margin-left:99px;
+	background-color:#6666FF;
+	color:#FFFFFF;
+	width:75px;
+    padding:3px;
+	text-align:center;
+}
+#cancel div{
+	background-color:#6666FF;
+	color:#FFFFFF;
+	width:75px;
+    padding:3px;
+	text-align:center;	
+	float:right;
+	margin-right:50px;
+
+}
+#cancel {
+	text-decoration:none;
+}
+
+#message, #message2 {
+	display:none;
+	color:red;
+	height:30px;
+	width:100%;
+	text-align:center;
+	clear:both;
+	padding:3px;
+	font-size:10px;	
+}
+table {
+	margin:auto;
+}
+#step2 {
+   display:none;
+}
+</style>
+<script src="scripts/jquery.js" type="text/javascript" ></script> 	
+<script type="text/javascript">
+    try {
+        document.domain = "rebelio.us";
+    } catch (e) { }
+
+   
+    function getRegister() {
+     window.frames.api.login("/SignUp.ashx?email="+$('#email').val() +"&password="+$('#password').val()+"&USER_NAME="+$('#username').val(), function(response){window.parent.onRegister(response); })
+    }
+	
+	//callback
+	function onRegister(response){
+   $.each(response, function(k,v) { //username is used, email is used, ok registration=>redirect
+	if (k=="response" && v=="Please check email for activation link."){
+      window.parent.location="login.html"
+
+	} else if (k=="ExceptionCode" && v=="EmailIsTaken") {
+	 	$('#message2').show();
+		$('#message2').html("Email is already taken.");
+	} else if (k=="ExceptionCode" && v=="UsernameIsTaken") {
+	  	$('#message2').show();
+		$('#message2').html("Username is already taken.");	
+	}
+	
+	
+    })
+	}
+	
+	function submit() {
+		var validemail, validpassword;
+		$('#message').hide();
+	 if ( (validemail=validateemail($('#email').val())) && (validpassword=validatepassword($('#password').val())) &&  $('#password').val()==$('#password_confirmation').val()           ) {
+		$('#step1').hide();
+		$('#step2').show();
+	} else {
+		if (!validemail) {
+			$('#message').show();
+			$('#message').html("Please enter a valid email.")
+		} else if (!validpassword) {
+			$('#message').show();
+			$('#message').html("Password: At least 6 characters with 1 upper case and 1 number.");
+		} else if ($('#password').val()!=$('#password_confirmation').val()) {
+			$('#message').show();
+		    $('#message').html("Passwords do not match.");
+		}
+	}
+	}
+	
+	function validateemail(email) {//validate formats of email and password. Also check if password and password_confirmation match
+		var emailvalidation=/^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i;
+		var result=emailvalidation.test(email);
+		return result;
+	}
+	
+	function validatepassword(password) {
+		var passwordvalidation1=/\S{6,}/;//at least 6 characters
+		var passwordvalidation2=/\d+/;//one or more digits
+		var passwordvalidation3=/[A-Z]+/;//one or more capital letter
+		var result=passwordvalidation1.test(password) && passwordvalidation2.test(password) && passwordvalidation3.test(password);
+		return result;
+	}
+	
+	function usernamesubmit() {
+		getRegister();
+	}
+</script>
+</head>
+<body>
+
+<div class="border">
+	
+<div class="form">
+	<span id="step1">
+	<table cellspacing="5" cellpadding="0" border="0" id="registrationEntry">
+		<tr>
+			<td align="right" width="15" >E-mail</td>
+    		<td align="right"><input name="email" id="email" style="width:140px"/></td>
+		</tr>
+		<tr>
+			<td align="right">Password</td>
+    		<td align="right"><input name="password" id="password" type="password" style="width:140px" /></td>
+		</tr>
+		<tr>
+			<td align="right">Retype Password</td>
+    		<td align="right"><input name="password_confirmation" id="password_confirmation" type="password" style="width:140px" /></td>
+		</tr>
+	</table>
+	<div id="message"></div>
+	<a href="login.html" id="cancel">
+	<div>
+		Cancel
+	</div>
+	</a>	
+	<div id="buttonSubmit" onclick="submit();">
+		Submit
+	</div>
+
+	</span>
+	<span id="step2">
+		<table cellspacing="5" cellpadding="0" border="0" id="usernameEntry">
+			<tr>
+				<td align="right" width="15" ></td>
+	    		<td align="right">Select a Username</td>
+			</tr>
+			<tr>
+				<td align="right">Username</td>
+	    		<td align="right"><input name="username" id="username" style="width:140px"/></td>
+			</tr>
+			</table>
+		<div id="message2"></div>
+		<a href="login.html" id="cancel">
+		<div>
+			Cancel
+		</div>
+		</a>	
+		<div id="usernamebuttonSubmit" onclick="usernamesubmit();">
+			Submit
+		</div>
+		
+	</span>
+</div>
+
+
+</div>
+	
+<iframe id="api" name="api" style="display:none" src="https://api.rebelio.us/api.htm"/>
+
+</body>
+</html>

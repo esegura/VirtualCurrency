@@ -1,0 +1,13 @@
+C:\VirtualCurrency\src\Payments\bin\Debug\Payments.dll.config
+C:\VirtualCurrency\src\Payments\bin\Debug\Payments.dll
+C:\VirtualCurrency\src\Payments\bin\Debug\Payments.pdb
+C:\VirtualCurrency\src\Payments\bin\Debug\CommonUtils.dll
+C:\VirtualCurrency\src\Payments\bin\Debug\CustomerManagement.dll
+C:\VirtualCurrency\src\Payments\bin\Debug\log4net.dll
+C:\VirtualCurrency\src\Payments\bin\Debug\paypal_base.dll
+C:\VirtualCurrency\src\Payments\bin\Debug\CommonUtils.pdb
+C:\VirtualCurrency\src\Payments\bin\Debug\log4net.xml
+C:\VirtualCurrency\src\Payments\bin\Debug\CustomerManagement.pdb
+C:\VirtualCurrency\src\Payments\obj\Debug\ResolveAssemblyReference.cache
+C:\VirtualCurrency\src\Payments\obj\Debug\Payments.dll
+C:\VirtualCurrency\src\Payments\obj\Debug\Payments.pdb

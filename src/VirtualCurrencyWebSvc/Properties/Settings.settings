@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VirtualCurrencyWebSvc.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AdministratorUsername" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Administrator</Value>
+    </Setting>
+    <Setting Name="AdministratorPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Cp4dP4g3rUs3r!</Value>
+    </Setting>
+    <Setting Name="PowerPointParserService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://powerpointparserhost:9999/PowerPointParser.ashx</Value>
+    </Setting>
+    <Setting Name="EnableOamIntegration" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AdministratorRoleName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AdminRole</Value>
+    </Setting>
+    <Setting Name="DefaultLandingPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">info.htm?app=CISCOCPADHOME&amp;mode=present&amp;fileTitle=PREVIEW</Value>
+    </Setting>
+    <Setting Name="DefaultAdminLandingPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">info.htm?app=CISCOCPADADMIN&amp;mode=edit</Value>
+    </Setting>
+    <Setting Name="DefaultTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CPAD</Value>
+    </Setting>
+    <Setting Name="JsonSaverRootDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\data\cisco</Value>
+    </Setting>
+    <Setting Name="DefaultErrorMessage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Please contact support</Value>
+    </Setting>
+    <Setting Name="PublicUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">cpad</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

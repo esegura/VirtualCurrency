@@ -1,0 +1,111 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualCurrencyWebSvc", "VirtualCurrencyWebSvc\VirtualCurrencyWebSvc.csproj", "{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments", "Payments\Payments.csproj", "{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments.Tests", "Payments.Tests\Payments.Tests.csproj", "{F93F14E6-D4C9-4220-BE70-2D8529AAA311}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonUtils", "CommonUtils\CommonUtils.csproj", "{001424B9-A33B-48AA-93F2-25F4C2CC5D73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2EB63857-7F02-45D3-9044-B6941D4D3A35}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "VirtualCurrencyWebSite", "VirtualCurrencyWebSite", "{DCDC74F2-562D-4992-8320-A51802AE5E87}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "2.0"
+		Debug.AspNetCompiler.VirtualPath = "/VirtualCurrencyWebSite"
+		Debug.AspNetCompiler.PhysicalPath = "VirtualCurrencyWebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\VirtualCurrencyWebSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/VirtualCurrencyWebSite"
+		Release.AspNetCompiler.PhysicalPath = "VirtualCurrencyWebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\VirtualCurrencyWebSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1178"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug-MySql|Any CPU = Debug-MySql|Any CPU
+		Debug-SqlServer|Any CPU = Debug-SqlServer|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Release-MySql|Any CPU = Release-MySql|Any CPU
+		Release-SqlServer|Any CPU = Release-SqlServer|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}.Debug-MySql|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}.Debug-MySql|Any CPU.Build.0 = Debug|Any CPU
+		{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}.Debug-SqlServer|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}.Debug-SqlServer|Any CPU.Build.0 = Debug|Any CPU
+		{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}.Release-MySql|Any CPU.ActiveCfg = Release|Any CPU
+		{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}.Release-MySql|Any CPU.Build.0 = Release|Any CPU
+		{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}.Release-SqlServer|Any CPU.ActiveCfg = Release|Any CPU
+		{7C673AF2-EC7C-46BE-A3AA-739FCCF95776}.Release-SqlServer|Any CPU.Build.0 = Release|Any CPU
+		{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}.Debug-MySql|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}.Debug-MySql|Any CPU.Build.0 = Debug|Any CPU
+		{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}.Debug-SqlServer|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}.Debug-SqlServer|Any CPU.Build.0 = Debug|Any CPU
+		{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}.Release-MySql|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}.Release-MySql|Any CPU.Build.0 = Release|Any CPU
+		{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}.Release-SqlServer|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB89F2F-E370-4CC9-8C33-2B13029EFFCC}.Release-SqlServer|Any CPU.Build.0 = Release|Any CPU
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311}.Debug-MySql|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311}.Debug-MySql|Any CPU.Build.0 = Debug|Any CPU
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311}.Debug-SqlServer|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311}.Debug-SqlServer|Any CPU.Build.0 = Debug|Any CPU
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311}.Release-MySql|Any CPU.ActiveCfg = Release|Any CPU
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311}.Release-MySql|Any CPU.Build.0 = Release|Any CPU
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311}.Release-SqlServer|Any CPU.ActiveCfg = Release|Any CPU
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311}.Release-SqlServer|Any CPU.Build.0 = Release|Any CPU
+		{001424B9-A33B-48AA-93F2-25F4C2CC5D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001424B9-A33B-48AA-93F2-25F4C2CC5D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001424B9-A33B-48AA-93F2-25F4C2CC5D73}.Debug-MySql|Any CPU.ActiveCfg = Debug-MySql|Any CPU
+		{001424B9-A33B-48AA-93F2-25F4C2CC5D73}.Debug-MySql|Any CPU.Build.0 = Debug-MySql|Any CPU
+		{001424B9-A33B-48AA-93F2-25F4C2CC5D73}.Debug-SqlServer|Any CPU.ActiveCfg = Debug-SqlServer|Any CPU
+		{001424B9-A33B-48AA-93F2-25F4C2CC5D73}.Debug-SqlServer|Any CPU.Build.0 = Debug-SqlServer|Any CPU
+		{001424B9-A33B-48AA-93F2-25F4C2CC5D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001424B9-A33B-48AA-93F2-25F4C2CC5D73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001424B9-A33B-48AA-93F2-25F4C2CC5D73}.Release-MySql|Any CPU.ActiveCfg = Release-MySql|Any CPU
+		{001424B9-A33B-48AA-93F2-25F4C2CC5D73}.Release-MySql|Any CPU.Build.0 = Release-MySql|Any CPU
+		{001424B9-A33B-48AA-93F2-25F4C2CC5D73}.Release-SqlServer|Any CPU.ActiveCfg = Release-SqlServer|Any CPU
+		{001424B9-A33B-48AA-93F2-25F4C2CC5D73}.Release-SqlServer|Any CPU.Build.0 = Release-SqlServer|Any CPU
+		{DCDC74F2-562D-4992-8320-A51802AE5E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDC74F2-562D-4992-8320-A51802AE5E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDC74F2-562D-4992-8320-A51802AE5E87}.Debug-MySql|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDC74F2-562D-4992-8320-A51802AE5E87}.Debug-MySql|Any CPU.Build.0 = Debug|Any CPU
+		{DCDC74F2-562D-4992-8320-A51802AE5E87}.Debug-SqlServer|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDC74F2-562D-4992-8320-A51802AE5E87}.Debug-SqlServer|Any CPU.Build.0 = Debug|Any CPU
+		{DCDC74F2-562D-4992-8320-A51802AE5E87}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDC74F2-562D-4992-8320-A51802AE5E87}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{DCDC74F2-562D-4992-8320-A51802AE5E87}.Release-MySql|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDC74F2-562D-4992-8320-A51802AE5E87}.Release-MySql|Any CPU.Build.0 = Debug|Any CPU
+		{DCDC74F2-562D-4992-8320-A51802AE5E87}.Release-SqlServer|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDC74F2-562D-4992-8320-A51802AE5E87}.Release-SqlServer|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F93F14E6-D4C9-4220-BE70-2D8529AAA311} = {2EB63857-7F02-45D3-9044-B6941D4D3A35}
+	EndGlobalSection
+EndGlobal
